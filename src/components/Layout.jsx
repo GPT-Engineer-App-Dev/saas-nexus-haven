@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
                         <Button variant="ghost">Features</Button>
                         <Button variant="ghost">Pricing</Button>
                         <Button variant="ghost" asChild><Link to="/about">About Us</Link></Button>
+                        <Button variant="ghost" asChild><Link to="/planetary-system">Planetary System</Link></Button>
                         <Button>Sign Up</Button>
                     </nav>
                 </div>
