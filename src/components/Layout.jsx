@@ -1,16 +1,18 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Layout = ({ children }) => {
     return (
         <div className="flex flex-col min-h-screen">
             <header className="bg-white shadow-sm">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                    <div className="text-2xl font-bold text-blue-600">SaaSLogo</div>
+                    <Link to="/" className="text-2xl font-bold text-blue-600">SaaSLogo</Link>
                     <nav>
+                        <Button variant="ghost" asChild><Link to="/">Home</Link></Button>
                         <Button variant="ghost">Features</Button>
                         <Button variant="ghost">Pricing</Button>
-                        <Button variant="ghost">Contact</Button>
+                        <Button variant="ghost" asChild><Link to="/about">About Us</Link></Button>
                         <Button>Sign Up</Button>
                     </nav>
                 </div>
